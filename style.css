@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background:beige;
+    color: black;
+    line-height: 1.5;
+}
+
+header {
+    background:#283618;
+    color: white;
+    padding: 12px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color:white;
+    margin:10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #dda15e;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+section {
+    padding: 30px 40px;
+    width: 85%;
+    margin: 25px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #606c38;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+#about img {
+    width: 150px;
+    background-color: burlywood;
+    height: 170px;
+    object-fit: cover;
+    margin: 0 auto 25px;
+}
+#about p {
+    max-width: 750px;
+    margin: 0 auto 15px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+#skills dl {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 5px;
+}
+
+#skills dt {
+    background: #c8d39f;
+    color: rgb(33, 24, 24);
+    padding: 10px;
+}
+
+#skills dd {
+    background: white;
+    padding: 7px;
+}
+
+#projects article {
+    display: flex;
+    gap: 15px;
+    background-color: #c8d39f;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+#projects article img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.project-content h3 {
+    color: #283618;
+}
+
+.project-content a {
+    color: #bc6c25;
+}
+
+.contact-container {
+    display: block;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: #283618;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #bc6c25;
+}
+
+footer {
+    background: #283618;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #projects article {
+        flex-direction: column;
+    }
+
+    #projects article img {
+        width: 100%;
+    }
+
+    #skills dl,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
